@@ -12,8 +12,8 @@ header {
         justify-content: space-between;
         align-items: center;
         a{
-            text-decoration: none;
             color: white;
+            cursor: pointer;
         }
         .logo {
             font-size: 2rem;
@@ -49,7 +49,6 @@ header {
         }
         .btn-container:hover {
             .line2 {
-                top: 15px;
                 width: 100%;
             }
         }

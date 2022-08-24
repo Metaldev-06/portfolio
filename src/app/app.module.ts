@@ -10,6 +10,7 @@ import { AboutMeComponent } from './components/home/about-me/about-me.component'
 import { TecnologiasComponent } from './components/home/about-me/tecnologias/tecnologias.component';
 import { ProyectosComponent } from './components/home/proyectos/proyectos.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { AsideComponent } from './components/aside/aside.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { FooterComponent } from './components/footer/footer.component';
     TecnologiasComponent,
     ProyectosComponent,
     FooterComponent,
+    AsideComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,15 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { HeaderService } from 'src/app/service/header.service';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
 
-  constructor() { }
+  constructor(private headerService: HeaderService) { }
+  get mostrar() {
+    return this.headerService.mostrar();
+  }
 
-  ngOnInit(): void {
+  activarSidebar() {
+    this.headerService.activadorSidebar.emit(this.headerService.mostrar());
   }
 
 }

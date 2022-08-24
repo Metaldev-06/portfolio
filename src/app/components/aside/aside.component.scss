@@ -1,0 +1,30 @@
+.aside-container {
+    width: 20vw;
+    height: 100vh;
+    top: 10vh;
+    position: fixed;
+    right: 0;
+    background-color: #111111;
+    ul {
+        width: 100%;
+        height: 100%;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 50px;
+        padding: 30px;
+        li {
+            a {
+                padding: 10px;
+                text-decoration: none;
+                color: white;
+            }
+            a:hover {
+                transform: scale(1.1);
+            }
+        }
+
+    }
+}

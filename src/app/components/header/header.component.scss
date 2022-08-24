@@ -23,10 +23,35 @@ header {
         .logo:hover {
             transform: scale(1.1);
         }
-        .container-menu {
-            font-size: 1rem;
-            display: flex;
-            gap: 50px;
+        .btn-container {
+            width: 50px;
+            height: 50px;
+            position: relative;
+            .line1, .line2, .line3 {
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: 5px;
+                background-color: white;
+                border-radius: 5px;
+                transform-origin: 50% 50%;
+                transition: all .3s ease;
+            }
+            .line2 {
+                right: 0;
+                width: 70%;
+                top: 15px;
+            }
+            
+            .line3 {
+                top: 30px;
+            }
+        }
+        .btn-container:hover {
+            .line2 {
+                top: 15px;
+                width: 100%;
+            }
         }
     }
 }

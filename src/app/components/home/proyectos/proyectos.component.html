@@ -1,0 +1,21 @@
+<section class="proyectos-container">
+  <h2>Proyectos</h2>
+  <article class="container-card">
+    <a
+      [href]="card.url"
+      class="card"
+      *ngFor="let card of proyectos"
+      target="_blank"
+    >
+      <div class="card-image">
+        <img [src]="card.img" [alt]="card.title" />
+      </div>
+      <div class="card-content">
+        <h3>{{ card.title }}</h3>
+        <p>
+          {{ card.description }}
+        </p>
+      </div>
+    </a>
+  </article>
+</section>

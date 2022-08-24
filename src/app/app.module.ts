@@ -8,6 +8,8 @@ import { HomeComponent } from './components/home/home.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { AboutMeComponent } from './components/home/about-me/about-me.component';
 import { TecnologiasComponent } from './components/home/about-me/tecnologias/tecnologias.component';
+import { ProyectosComponent } from './components/home/proyectos/proyectos.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { TecnologiasComponent } from './components/home/about-me/tecnologias/tec
     HeroComponent,
     AboutMeComponent,
     TecnologiasComponent,
+    ProyectosComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

@@ -11,36 +11,49 @@ $breakpoints: (
 }
 .aboutMe-container {
     width: 90%;
+    height: 90vh;
     margin: 0 auto;
     font-size: 16px;
     @include media-up(fold){
         width: 99%;
     }
-    h2 {
-        font-weight: bold;
-        font-size: 3.5rem;
-        text-align: center;
-        margin-bottom: 30px;
-        @include media-up(fold){
-            font-size: 2.8rem;
+    .content-aboutMe {
+        width: 100%;
+        h2 {
+            font-weight: bold;
+            font-size: 3.5rem;
+            text-align: center;
+            margin-bottom: 30px;
+            @include media-up(fold){
+                font-size: 2.8rem;
+            }
+        }
+        .text {
+            width: 100%;
+            margin: 0 auto;
+            border-radius: 8px;
+            padding: 20px;
+            color: #ccc;
+            font-size: 1.2rem;
+            @include media-up(fold){
+                padding: 10px;
+            }
+            p {
+                text-align: center;
+                margin-top: 0.5rem;
+                @include media-up(fold){
+                    text-align: justify;
+                }
+            }
         }
     }
-    .text {
+    .tecnologias {
         width: 100%;
-        margin: 0 auto;
-        border-radius: 8px;
-        padding: 20px;
-        color: #ccc;
-        font-size: 1.2rem;
-        @include media-up(fold){
-            padding: 10px;
-        }
-        p {
+        height: 100%;
+        h2 {
+            font-size: 3rem;
             text-align: center;
-            margin-top: 0.5rem;
-            @include media-up(fold){
-                text-align: justify;
-            }
+            margin: 50px 0 30px 0;
         }
     }
 }

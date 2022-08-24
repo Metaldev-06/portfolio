@@ -7,5 +7,19 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #18171B;
-    color: white
+    color: white;
+    cursor: url(./assets/img/cursor2.png), auto;
+}
+body::-webkit-scrollbar {
+    width: 12px;
+}
+  
+body::-webkit-scrollbar-track {
+    background: grey;
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #18171B;
+    border-radius: 20px;
+    border: 1px solid grey;
 }

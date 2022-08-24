@@ -83,6 +83,10 @@ $breakpoints: (
         position: absolute;
         bottom: 100px;
         right: 50%;
+        @include media-up(lg){
+            bottom: 150px;
+            
+        }
         .container {
             position: relative;
             .chevron {

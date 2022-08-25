@@ -1,6 +1,17 @@
+$breakpoints: (
+    fold: 375px,
+    lg : 490px,
+);
+
+
+@mixin media-up($breakpoint) {
+    @media screen and (max-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+    }
+}
 footer {
     width: 100%;
-    height: 50vh;
+    padding: 20px;
     background-color: #111111;
     .container-footer {
         width: 90%;
@@ -22,15 +33,24 @@ footer {
             p {
                 text-align: center;
                 width: 300px;
+                @include media-up(fold){
+                    width: 150px;
+                }
             }
         }
         .container-redes {
             display: flex;
             gap: 20px;
+            @include media-up(fold){
+                gap: 10px;
+            }
             a {
                 color: white;
                 font-size: 3rem;
                 transition: all .3s;
+                @include media-up(fold){
+                    font-size: 2rem;
+                }
             }
             .red1:hover {
                 transform: translateY(8px);
@@ -52,7 +72,7 @@ footer {
             }
             .red4:hover {
                 transform: translateY(8px);
-                color: #1C96E8;
+                color: #0A66C2;
             }
         }
     }

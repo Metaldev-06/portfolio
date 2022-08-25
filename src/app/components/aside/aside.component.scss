@@ -1,7 +1,22 @@
+$breakpoints: (
+    fold: 375px,
+    lg : 490px,
+    sm: 761px
+);
+
+
+@mixin media-up($breakpoint) {
+    @media screen and (max-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+    }
+}
 .aside-container {
     width: 20vw;
+    @include media-up(sm){
+        width: 50vw;
+    }
     height: 100vh;
-    top: 10vh;
+    top: 0;
     position: fixed;
     right: 0;
     background-color: #111111;
@@ -16,14 +31,15 @@
         gap: 50px;
         padding: 30px;
         li {
+            transition: all .3s;
             a {
                 padding: 10px;
                 text-decoration: none;
                 color: white;
             }
-            a:hover {
-                transform: scale(1.1);
-            }
+        }
+        li:hover {
+            transform: scale(1.6);
         }
 
     }

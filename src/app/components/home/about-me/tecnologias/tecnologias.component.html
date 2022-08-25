@@ -1,7 +1,7 @@
 <div class="tecnologias-container">
   <div class="card" *ngFor="let card of tecnologias">
     <div class="img-card">
-      <img [src]="card.img" />
+      <img [src]="card.img" [alt]="card.title" />
     </div>
     <div class="body-text">
       <h3>{{ card.title }}</h3>

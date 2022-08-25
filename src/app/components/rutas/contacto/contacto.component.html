@@ -1,14 +1,35 @@
-<section class="container-pag-tecnologias">
-  <div class="text-container">
-    <h2>El cambio es la única constante.</h2>
-    <p>Estamos desarrollando una nueva página. Espéralo muy pronto.</p>
-  </div>
-  <div
-    class="img-container animate__animated animate__pulse animate__infinite infinite"
-  >
-    <img
-      src="../../../../assets/img/undraw_specs_re_546x.svg"
-      alt="working..."
-    />
-  </div>
+<section class="container-pag-contactos">
+  <article class="datos-contacto">
+    <h2 class="title-contactos">Haz tu proyecto realidad</h2>
+    <p>
+      Déjame tus datos para que pueda ponerme en contacto contigo y empezar algo
+      juntos.
+    </p>
+    <img src="../../../../assets/img/contacto.svg" alt="" />
+  </article>
+  <article class="form-contactos">
+    <h2 class="title-contactos">Formulario de Contacto</h2>
+    <form [formGroup]="datos">
+      <input
+        type="email"
+        placeholder="Ingrese su correo"
+        required
+        formControlName="email"
+      />
+      <input
+        type="text"
+        placeholder="Asunto"
+        required
+        formControlName="asunto"
+      />
+      <textarea
+        formControlName="mensaje"
+        cols="30"
+        rows="10"
+        placeholder="Mensaje"
+        required
+      ></textarea>
+      <button (click)="envioCorreo()">Enviar</button>
+    </form>
+  </article>
 </section>

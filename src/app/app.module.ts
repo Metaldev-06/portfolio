@@ -17,6 +17,8 @@ import { ContactoComponent } from './components/rutas/contacto/contacto.componen
 import { PagTecnologiasComponent } from './components/rutas/pag-tecnologias/pag-tecnologias.component';
 import { PagProyectosComponent } from './components/rutas/pag-proyectos/pag-proyectos.component';
 import { PagServiciosComponent } from './components/rutas/pag-servicios/pag-servicios.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -33,11 +35,13 @@ import { PagServiciosComponent } from './components/rutas/pag-servicios/pag-serv
     ContactoComponent,
     PagTecnologiasComponent,
     PagProyectosComponent,
-    PagServiciosComponent
+    PagServiciosComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule,
     RouterModule.forRoot([
       {path: '', component:HomeComponent},
       {path: 'contacto', component:ContactoComponent},
@@ -46,7 +50,7 @@ import { PagServiciosComponent } from './components/rutas/pag-servicios/pag-serv
       {path: 'servicios', component:PagServiciosComponent},
       {path: 'error', component:PagErrorComponent},
       {path: '**', redirectTo:'/error', pathMatch:'full'},
-    ])
+    ]),
   ],
   providers: [],
   bootstrap: [AppComponent]

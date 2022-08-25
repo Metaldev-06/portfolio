@@ -43,7 +43,7 @@ export class TecnologiasComponent{
     {
       img: '../../../../../assets/img/icons8-typescript.svg',
       title: 'TypeScript',
-      description: 'TypesScript es un lenguaje de programación de alto nivel que se utiliza en la creación de páginas web interactivas y de aplicaciones web.'
+      description: 'TypesScript es un lenguaje de programación de código abierto desarrollado y mantenido por Microsoft. Es un superconjunto de JavaScript.'
     },
     {
       img: '../../../../../assets/img/angular.svg',
@@ -53,17 +53,17 @@ export class TecnologiasComponent{
     {
       img: '../../../../../assets/img/icons8-node-js.svg',
       title: 'NodeJS',
-      description: 'NodeJS es una plataforma de desarrollo de aplicaciones web y móviles multiplataforma que se basa en una arquitectura de componentes.'
+      description: 'NodeJS es un entorno en tiempo de ejecución multiplataforma, de código abierto, para la capa del servidor basado en el lenguaje de programación JavaScript.'
     },
     {
       img: '../../../../../assets/img/icons8-express-js.svg',
       title: 'Express',
-      description: 'Express es una plataforma de desarrollo de aplicaciones web y móviles multiplataforma que se basa en una arquitectura de componentes.'
+      description: 'Express es un entorno de trabajo para aplicaciones web para el programario Node.js, de código abierto y con licencia MIT. Se utiliza para desarrollar aplicaciones web y APIs.'
     },
     {
       img: '../../../../../assets/img/php-svgrepo-com.svg',
       title: 'PHP',
-      description: 'PHP es un lenguaje de programación de alto nivel que se utiliza en la creación de páginas web interactivas y de aplicaciones web.'
+      description: 'PHP es un lenguaje de programación de alto nivel de uso general que se adapta especialmente al desarrollo web'
     },
     {
       img: '../../../../../assets/img/icons8-postgresql.svg',

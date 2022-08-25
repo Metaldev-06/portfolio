@@ -63,7 +63,7 @@ export class TecnologiasComponent{
     {
       img: '../../../../../assets/img/php-svgrepo-com.svg',
       title: 'PHP',
-      description: 'PHP es un lenguaje de programación de alto nivel de uso general que se adapta especialmente al desarrollo web'
+      description: 'PHP es un lenguaje de programación de alto nivel de uso general que se adapta especialmente al desarrollo web.'
     },
     {
       img: '../../../../../assets/img/icons8-postgresql.svg',

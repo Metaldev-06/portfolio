@@ -30,7 +30,6 @@ export class ContactoComponent {
     
     
     this.http.post('https://back-mail-project.vercel.app/envio', params).subscribe(resp => {
-      console.log(resp);
       Loading.remove();
       Notify.init({position: 'right-bottom',});
       if (this.datos.valid) {

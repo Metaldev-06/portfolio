@@ -12,10 +12,8 @@ export class HeaderService {
     
     if (this.clase === false) {
       this.clase = true;
-      console.log(this.clase)
     } else {
       this.clase = false;
-      console.log(this.clase)
     }
     return this.clase;
   }

@@ -28,7 +28,6 @@ export class ContactoComponent {
       mensaje: this.datos.value.mensaje,
     }
     
-    console.log(params);
     
     this.http.post('https://back-mail-project.vercel.app/envio', params).subscribe(resp => {
       console.log(resp);

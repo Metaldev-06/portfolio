@@ -24,3 +24,8 @@ body::-webkit-scrollbar-thumb {
     border-radius: 20px;
     border: 1px solid grey;
 }
+
+*::selection {
+    background-color: #2AABD9;
+    color: white;
+}

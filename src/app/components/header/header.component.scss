@@ -21,6 +21,11 @@ header {
             font-size: 2rem;
             font-weight: bold;
             transition: all .3s;
+            a {
+                h1 {
+                    font-size: 2rem;
+                }
+            }
         }
         .logo:hover {
             transform: scale(1.1);

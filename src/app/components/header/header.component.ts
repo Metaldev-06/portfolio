@@ -1,5 +1,4 @@
 import { Component, HostListener } from '@angular/core';
-import { Scroll } from '@angular/router';
 import { HeaderService } from 'src/app/service/header.service';
 
 @Component({
